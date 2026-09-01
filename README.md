@@ -4,7 +4,7 @@ A marketplace of Claude Code plugins.
 
 ```
 /plugin marketplace add vancoja/gyre
-/plugin install loop@gyre
+/plugin install Loop@Gyre
 ```
 
 | Plugin | |

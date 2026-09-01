@@ -2,8 +2,16 @@
   "name": "loop",
   "displayName": "Loop — story loops",
   "description": "Two Agent Skills for authoring and writing story loops — causal loop diagrams as diagram-as-code — with the real analysis bundled so an agent computes the feedback loops instead of guessing them.",
-  "version": "1.53.0",
+  "version": "1.53.1",
   "homepage": "https://github.com/vancoja/gyre",
   "repository": "https://github.com/vancoja/gyre",
-  "keywords": ["causal-loop-diagram", "systems-thinking", "systemic-design", "diagram-as-code"]
+  "keywords": [
+    "causal-loop-diagram",
+    "systems-thinking",
+    "systemic-design",
+    "diagram-as-code"
+  ],
+  "author": {
+    "name": "Jan Van Coppenolle"
+  }
 }

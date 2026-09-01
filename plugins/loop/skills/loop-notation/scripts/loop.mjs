@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Loop 1.53.0 — bundled CLI, no dependencies, no network.
+// Loop 1.53.1 — bundled CLI, no dependencies, no network.
 
 // ../cli/dist/language-bin.js
 import { readFileSync, writeFileSync } from "node:fs";
