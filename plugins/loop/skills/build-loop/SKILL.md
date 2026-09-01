@@ -1,15 +1,19 @@
 ---
-name: loop-notation
-description: Write, edit and check a Loop story-loop document — the `.loop` diagram-as-code notation for causal loop diagrams. Use when asked to produce a loop map, a causal loop diagram, a story loop or a Connection Circle; to put one in a note for the Obsidian plugin as a ```loop block; to fix syntax errors in a `.loop` file; or to change a map that already exists. Also use before saying anything about a map's feedback loops, because this skill runs the tool that computes them rather than guessing.
+name: build-loop
+description: Build a Loop story-loop document — the `.loop` diagram-as-code notation for causal loop diagrams — from prose, from an interview or retrospective, or by editing a map that already exists, and check it with the real analysis. Use when asked to map a system, make sense of a dynamic, produce a causal loop diagram, story loop or Connection Circle, put one in an Obsidian note as a ```loop block, or fix a `.loop` file. Also use before saying anything about a map's feedback loops, because this skill runs the tool that computes them rather than guessing.
 ---
 
-# Writing a loop document
+# Building a loop document
 
-You turn variables and causal claims into a valid Loop document.
+You turn a system — described in prose, in an interview, in a retrospective, or
+already half-drawn — into a valid Loop document, and you check it with the tool.
 
-Read `reference/syntax.md` for the grammar and `reference/writing-your-first-map.md`
-for the shape of a first map. They are the project's own documents, copied here
-unchanged — prefer them to anything you remember about the notation.
+Read `reference/syntax.md` for the grammar. It is the project's own document,
+copied here unchanged — prefer it to anything you remember about the notation.
+
+The register is a **story loop**: a causal loop diagram presented as a system
+narrative. The map is a reading of someone's situation in their own words, not
+a model of it.
 
 ## The rule that matters more than the syntax
 
@@ -28,6 +32,59 @@ say nothing about them — and say that you have not:
 > I have not run the analysis, so I can't tell you what loops this closes.
 
 That sentence is a correct answer. A confident guess is not.
+
+## Getting the variables and links right
+
+The rule above is about what you SAY. This is about what you WRITE, and it is
+the same discipline one step earlier — it is easy, and much easier for a model,
+to produce a map that reads beautifully and asserts things nobody said. Every
+variable sounds plausible, every arrow looks reasonable, the loops close
+satisfyingly, and none of it traces to anything. That artefact is worse than no
+map, because it is unfalsifiable and it feels like insight.
+
+> For every variable and every link, you can point at the sentence it came from.
+
+Six grounded variables beat twenty where four were invented to close the picture.
+
+**A variable is something that can go up or down.** If it cannot be more or less
+of itself, it is a thing, an event or an opinion — not a variable.
+
+| Not a variable | A variable |
+| --- | --- |
+| "the new CI system" | deployment frequency; time to green build |
+| "the reorg" | team stability; hand-offs per change |
+| "we should test more" | test coverage; confidence in a release |
+
+**Use their words.** If the material says "firefighting", the variable is
+`firefighting`, not `unplanned reactive work` — a tidied vocabulary quietly makes
+the map yours rather than theirs. And **prefer a neutral direction**:
+`delivery speed`, not `slow delivery`, because a variable named for one of its
+states makes every link about it confusing to sign.
+
+**A link is a claim that a change in `a` produces a change in `b`.** Correlation,
+sequence and co-occurrence are not that; two things mentioned in the same breath
+are not that. Take the direction only where it is claimed — *"the more X the more
+Y"* is `same`, *"the more X the less Y"* is `opposite`, and *"X affects Y, not
+sure which way"* is **unknown**, which the notation spells `?` and which is a
+legitimate answer rather than a gap to fill in.
+
+**Ask about delay explicitly** when the material allows it. People leave it out
+and it changes how a system behaves.
+
+Four things you never do:
+
+- **Never close a circle to make it close.** An open chain is a finding, and the
+  validator says so (`V-3`). That warning is the diagnosis, not a defect.
+- **Never invent a variable to join two others.** If a link needs a step nobody
+  mentioned, the step is missing — say so.
+- **Never name a loop.** Not "that's a vicious cycle". Loops are computed from
+  the finished map; a loop you can see in five links is exactly where confidence
+  and error peak together.
+- **Never name an archetype.** "This sounds like Limits to Growth" pre-loads the
+  answer, and the tool detects candidates properly, from structure.
+
+**Say what is missing.** "Nothing here tells us what X does" is a finding, and
+it is the sentence that gets the next answer out of the person.
 
 ## What a document looks like
 
@@ -92,8 +149,8 @@ tension "Balancing" in workload => capacity
   tool says it could not corroborate it.
 
 Everything else — `{ goal }`, a variable `note "…"`, `~delay` on a link,
-`archetype` and `signature` declarations — is in `reference/syntax.md`. Read it
-rather than guessing; it is the project's own document, not a summary.
+`archetype` and `signature` declarations — is in `reference/syntax.md`, whose
+appendix carries the complete grammar. Read it rather than guessing.
 
 ## Where the document goes
 

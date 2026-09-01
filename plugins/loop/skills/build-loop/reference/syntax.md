@@ -918,16 +918,10 @@ each stage, see [Writing your first map](writing-your-first-map.md).
 
 ## Appendix: the grammar
 
-**This block is a MIRROR.** The grammar itself is
-[`loop.ebnf`](loop.ebnf), beside this page,
-and that is the file to edit; this block is regenerated from it and CI fails if
-the two differ. The parser reads the same file — its statement dispatch and its
-*"expected one of …"* messages are generated from it, so it cannot recognise a
-keyword the grammar does not define (`G-2.3`, `ADR-030`).
-
-It lived in this appendix until v1.42.1. This page is a prose guide that the
-primer, the `loop-notation` skill and a test all consume; the authority for a
-language does not belong in an appendix to a tutorial.
+The complete grammar, in EBNF — the notation's **definition**, not a summary of
+it. The parser is generated from this same grammar, including its statement
+dispatch and its *"expected one of …"* messages, so anything it does not define
+is not valid Loop and is refused by name rather than quietly ignored.
 
 
 ```ebnf
