@@ -1,4 +1,4 @@
-# Loop — the skill, as a plugin — v1.54.0
+# Loop — the skill, as a plugin — v1.54.1
 
 One Agent Skill, `build-loop`: it takes a system — described in prose, in an
 interview, in a retrospective, or already half-drawn — to a valid `.loop`

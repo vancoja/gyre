@@ -10,7 +10,7 @@
       "displayName": "Loop — diagram-as-code for story loops",
       "source": "./plugins/loop",
       "description": "One Agent Skill that builds story loops as diagram-as-code — causal loop diagrams from prose, an interview or a map you already have — with the real analysis bundled so an agent computes the feedback loops instead of guessing them.",
-      "version": "1.54.0",
+      "version": "1.54.1",
       "author": {
         "name": "Jan Van Coppenolle"
       }
