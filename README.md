@@ -7,6 +7,10 @@ A marketplace of Claude Code plugins.
 /plugin install Loop@Gyre
 ```
 
+Both names are **case-sensitive** — `loop@gyre` will not resolve. If you
+installed under an earlier name, the marketplace carries a rename map and
+Claude Code migrates you on the next load.
+
 | Plugin | |
 | --- | --- |
 | [`loop`](plugins/loop/) | Two Agent Skills for authoring and writing **story loops** — causal loop diagrams as diagram-as-code — with the real analysis bundled, so an agent computes the feedback loops instead of guessing them. |
