@@ -2,7 +2,7 @@
   "name": "loop",
   "displayName": "Loop — diagram-as-code for story loops",
   "description": "Two Agent Skills for authoring and writing story loops as diagram-as-code, with the real analysis bundled so an agent computes the feedback loops instead of guessing them.",
-  "version": "1.53.2",
+  "version": "1.53.3",
   "homepage": "https://github.com/vancoja/gyre",
   "repository": "https://github.com/vancoja/gyre",
   "keywords": [

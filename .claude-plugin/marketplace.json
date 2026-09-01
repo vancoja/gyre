@@ -1,21 +1,22 @@
 {
-  "name": "Gyre",
+  "name": "gyre",
   "description": "Story loops and the tools that compute them — causal loop diagrams as diagram-as-code, with the feedback loops derived rather than declared.",
   "owner": {
     "name": "Jan Van Coppenolle"
   },
   "plugins": [
     {
-      "name": "Loop",
+      "name": "loop",
+      "displayName": "Loop — diagram-as-code for story loops",
       "source": "./plugins/loop",
       "description": "Two Agent Skills for authoring and writing story loops — causal loop diagrams as diagram-as-code — with the real analysis bundled so an agent computes the feedback loops instead of guessing them.",
-      "version": "1.53.2",
+      "version": "1.53.3",
       "author": {
         "name": "Jan Van Coppenolle"
       }
     }
   ],
   "renames": {
-    "loop": "Loop"
+    "Loop": "loop"
   }
 }

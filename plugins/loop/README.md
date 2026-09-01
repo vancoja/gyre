@@ -1,4 +1,4 @@
-# Loop — the skills, as a plugin — v1.53.2
+# Loop — the skills, as a plugin — v1.53.3
 
 Two Agent Skills, so an agent can **author** a story loop with you and **write**
 it as a valid `.loop` document. Neither draws: the picture is the Obsidian
@@ -17,10 +17,10 @@ the `gyre` marketplace:
 
 ```
 /plugin marketplace add vancoja/gyre
-/plugin install Loop@Gyre
+/plugin install loop@gyre
 ```
 
-`/plugin update Loop@Gyre` moves you to a later release. An installed
+`/plugin update loop@gyre` moves you to a later release. An installed
 plugin is copied into a per-version cache, so a release you already have keeps
 working whatever happens to the repository afterwards.
 

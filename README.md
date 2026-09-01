@@ -4,12 +4,12 @@ A marketplace of Claude Code plugins.
 
 ```
 /plugin marketplace add vancoja/gyre
-/plugin install Loop@Gyre
+/plugin install loop@gyre
 ```
 
-Both names are **case-sensitive** — `loop@gyre` will not resolve. If you
-installed under an earlier name, the marketplace carries a rename map and
-Claude Code migrates you on the next load.
+Both names are lower-case identifiers. If you installed under an earlier
+name, the marketplace carries a rename map and Claude Code migrates you on
+the next load.
 
 | Plugin | |
 | --- | --- |
