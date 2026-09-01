@@ -1,4 +1,4 @@
-# Loop — the skills, as a plugin — v1.53.1
+# Loop — the skills, as a plugin — v1.53.2
 
 Two Agent Skills, so an agent can **author** a story loop with you and **write**
 it as a valid `.loop` document. Neither draws: the picture is the Obsidian

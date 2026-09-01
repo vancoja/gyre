@@ -9,7 +9,7 @@
       "name": "Loop",
       "source": "./plugins/loop",
       "description": "Two Agent Skills for authoring and writing story loops — causal loop diagrams as diagram-as-code — with the real analysis bundled so an agent computes the feedback loops instead of guessing them.",
-      "version": "1.53.1",
+      "version": "1.53.2",
       "author": {
         "name": "Jan Van Coppenolle"
       }
